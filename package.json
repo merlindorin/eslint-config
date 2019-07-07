@@ -1,0 +1,37 @@
+{
+  "name": "@renault-digital/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint config following Renault Digital code conventions.",
+  "main": "common.json",
+  "scripts": {
+    "test": "yarn test:eslint && yarn test:markdown",
+    "test:eslint": "eslint --report-unused-disable-directives . --ext .js,.json",
+    "test:markdown": "markdownlint *.md --config markdownlint.json"
+  },
+  "keywords": [
+    "style guide",
+    "eslint",
+    "eslintconfig",
+    "renault digital"
+  ],
+  "files": [
+    "server.json",
+    "common.json",
+    "mocha.json",
+    "node.json"
+  ],
+  "contributors": [
+    "Romain DARY <romain.dary@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-json": "^1.4.0"
+  },
+  "devDependencies": {
+    "markdownlint": "^0.15.0",
+    "markdownlint-cli": "^0.17.0"
+  }
+}
