@@ -1,7 +1,8 @@
 {
   "name": "@renault-digital/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "ESLint config following Renault Digital code conventions.",
+  "private": false,
   "main": "common.json",
   "scripts": {
     "test": "yarn test:eslint && yarn test:markdown",
